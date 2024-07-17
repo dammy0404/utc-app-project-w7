@@ -35,4 +35,5 @@ resource "aws_security_group" "sg-demo" {
   tags= {
     env = "Dev"
   }
+  depends_on = [ aws_vpc.vp1 ]
 }
